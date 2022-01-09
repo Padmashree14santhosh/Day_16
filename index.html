@@ -16,7 +16,8 @@
             margin-left: 2%;
             border: 1px solid black;
             padding: 10px;
-            max-width: 60rem;
+            width: fit-content;
+            max-width: 50rem;
         }
         span{
             color: red;
@@ -70,13 +71,15 @@
     opacity: 0.4
 }
 
-table{
-    width:100%;
+.table-striped{
+    max-width: 100%;
 }
 
-@media(min-width:50rem){
+@media(min-width:40rem) and (max-width:auto){
     table{
-        display: block;
+        table-layout:auto;
+        /* margin-right: 20px; */
+
     }
 }
         
